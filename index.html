@@ -21,12 +21,70 @@
             </nav>
             <div class="header-text">
                 <p>UI/UX Designer</p>
-                <h1>Hi, I am Toufique from South Africa</h1>
+                <h1>Hi, I am Toufique <span>Mahlangu</span> <br> from South Africa</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------About------------- -->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pictures/jeshoots-com-pUAM5hPaCRI-unsplash.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a hard working, honest individual. I am a good timekeeper, always
+                        willing to learn new skills. I am friendly, helpful and polite, have a good sense
+                        of humour, I am able to work independently in busy environments and also
+                        within a team setting. I am passionate about the things I do. I always strive to
+                        finish what I've started.
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li> <span>UI/UX</span> <br> Design Web/App Interfaces</li>
+                                <li> <span>Web Development</span> <br> Web App Development</li>
+                                <li> <span>App Development</span> <br> Building Androin/IOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li> <span>Full Stack Dev-Ops Intern</span> <br> Internshiip at CapaCiti</li>
+                                <li> <span>Microsoft PP Developer</span> <br> Learnership at NetCampus</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li> <span>2018 - 2021</span> <br> National Advanced at TUT</li>
+                                <li> <span>2022</span> <br> Advanced Dip at TUT</li>
+                            </ul>
+                        </div>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 
-   
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 
     <!-- 
     <header>
