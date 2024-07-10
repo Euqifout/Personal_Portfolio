@@ -130,8 +130,14 @@ nav ul li a:hover::after {
     display: block;
 }
 
+/* ----------- Services section--------- */
 
-
+#services{
+    padding: 30px 0;
+}
+.service-list{
+    display: grid;
+}
 
 /*
 
