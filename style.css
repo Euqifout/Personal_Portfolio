@@ -28,11 +28,12 @@ nav {
 .container .LogoText h1{
     color: #fff;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
 }
 .container .LogoText h1 span{
     color: #ff004f;
 }
+
 .logo{
     width: 250px;
 }
@@ -52,7 +53,7 @@ nav ul li a::after {
     content: '';
     width: 20%;
     height: 3px;
-    background: #ff004f;
+    background: #fff;
     position: absolute;
     left: 0;
     bottom: -6px;
